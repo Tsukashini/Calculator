@@ -29,7 +29,6 @@ public class TestCalculator {
     public void OverweightTest() {
         System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
         WebDriver driver = new ChromeDriver();
-        //Open calculator page
         driver.get("https://healthunify.com/bmicalculator/");
         //Input weight
         driver.findElement(By.name("wg")).sendKeys("90");
